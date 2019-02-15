@@ -1,0 +1,37 @@
+<name>FlatBlack</name>
+<titleLayout>CIML</titleLayout>
+<keepBorder>yes</keepBorder>
+<animateIconify>yes</animateIconify>
+<font place="ActiveWindow">
+    <name>sans</name>
+    <size>8</size>
+    <weight>bold</weight>
+    <slant>normal</slant>
+</font>
+<font place="InactiveWindow">
+    <name>sans</name>
+    <size>8</size>
+    <weight>bold</weight>
+    <slant>normal</slant>
+</font>
+<font place="MenuHeader">
+    <name>sans</name>
+    <size>9</size>
+    <weight>normal</weight>
+    <slant>normal</slant>
+</font>
+<font place="MenuItem">
+    <name>sans</name>
+    <size>9</size>
+    <weight>normal</weight>
+    <slant>normal</slant>
+</font>
+<font place="ActiveOnScreenDisplay">
+    <name/>
+</font>
+<font place="InactiveOnScreenDisplay">
+    <name>Sans</name>
+    <size>8</size>
+    <weight/>
+    <slant/>
+</font>

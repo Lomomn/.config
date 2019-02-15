@@ -1,0 +1,34 @@
+<application class="*">
+    <decor>yes</decor>
+</application>
+
+<application class="spotify">
+    <decor>no</decor>
+    <desktop>all</desktop>
+</application>
+
+<application class="Firefox">
+    <monitor>2</monitor>
+    <decor>no</decor>
+</application>
+
+<application name="discord">
+    <decor>yes</decor>
+</application>
+
+<application class="Code">
+    <decor>no</decor>
+</application>
+
+<application class="Terminator">
+    <decor>no</decor>
+</application>
+
+<application name="gmessage">
+    <decor>no</decor>
+    <shade>no</shade>
+    <skip_pager>yes</skip_pager>
+    <skip_taskbar>yes</skip_taskbar>
+    <fullscreen>no</fullscreen>
+    <maximized>no</maximized>
+</application>

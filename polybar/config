@@ -1,19 +1,23 @@
 [bar/bar]
+enable-ipc = true
 modules-left  = arch ewmh windows
-modules-right = spotify date
+modules-right = cpu memory spotify date
 monitor = DisplayPort-0
 
 tray-position = right
-tray-padding = 2
+tray-padding = 4
 tray-detached = false
 cursor-click = pointer
-font-0 = "Source Code Pro:pixelsize=10;3"
-font-1 = "Noto Color Emoji:scale=10;4"
+
+font-0 = "Source Code Variable:pixelsize=10;3:weight=bold;2"
+font-1 = "HanaMinA:pixelsize=10;3"
+font-2 = "HanaMinB:pixelsize=10;3"
+font-3 = "Noto Color Emoji:scale=10;3"
 
 [module/arch]
 type = custom/text
-content = [🔎]
-content-padding = 1
+content = "[🔎] "
+content-padding = 0
 content-background = #000000
 content-foreground = #ffffff
 click-left = sh ~/.config/polybar/rmenu_1
@@ -22,21 +26,21 @@ click-right = sh ~/.config/polybar/rmenu_wi_1
 [module/date]
 type = internal/date
 date = [ %Y-%m-%d %a %H:%M ]
-label-padding = 1
+label-padding = 0
 
 [module/windows]
 type = custom/script
-label-padding = 1
+label-padding = 0
 interval = 1
 format = <label>
 exec = python2.7 ~/.config/polybar/windows.py
 
 [module/spotify]
 type = custom/script
-label-padding = 1
+label-padding = 0
 interval = 1
 format = <label>
-exec = python2.7 ~/.config/polybar/spotify_status.py -t 50 -f '[ {artist}: {song} ]' 
+exec = python2.7 ~/.config/polybar/spotify_status.py -t 50 -f '[ {artist}: {song} ] ' 
 
 [module/ewmh]
 type = internal/xworkspaces
@@ -51,3 +55,13 @@ label-urgent = %icon%
 label-urgent-foreground = #ff0000
 label-empty = %icon%
 label-empty-foreground = #666666
+
+[module/cpu]
+type = internal/cpu
+interval = 1
+label = "[ CPU: %percentage%% ] "
+
+[module/memory]
+type = internal/memory
+interval = 1
+label = "[ RAM: %percentage_used%% ] "

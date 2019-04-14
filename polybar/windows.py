@@ -3,6 +3,21 @@ import os
 import math
 import subprocess
 
+"""
+TODO
+    Argparse
+        Window label formatting
+            Containing characters such as [] or ()
+            Active and inactive colors
+            Max label length
+            Fixed label length
+            Padding
+            Template/format the output (so that spaces can be used instead of module padding)
+    
+    Make the program loop and only print when something changes, this should minimize the delay
+        and not need polybar to poll every second which feels wrong        
+"""
+
 name_length = 20
 name_center = True
 active_color = '%{F#ffffff}'
@@ -39,13 +54,16 @@ def get_name(win):
                 name = ' '*int(math.floor(remaining/2.0)) + name + ' '*int(math.ceil(remaining/2.0))
         else:
             name = name + ''*remaining
-    
 
     return (
-        '%{A1:wmctrl -i -a '+win.id+':}' +
+        '%{A1:' + (is_active and 'wmctrl -i -r '+win.id+' -b toggle,hidden:}' or 'wmctrl -i -a '+win.id+':}') +
+        '%{A2:wmctrl -i -c '+win.id+':}' +
+        '%{A3:wmctrl -i -r '+win.id+' -b add,hidden:}' +
         (is_active and active_color or background_color) +
-        "[ {} ]".format(name) +
+        "[ {} ]".format(name.decode("ascii", errors="ignore").encode()) +
         '%{F-}' +
+        '%{A}' + 
+        '%{A}' + 
         '%{A}'
     )
     
@@ -55,4 +73,4 @@ windows_list = Window.list()
 if len(windows_list)>0:
     names = [get_name(win) for win in windows_list]
     names_formatted = "".join([name for name in names if name is not None])
-    print(names_formatted)
+    print(" " + names_formatted + " ")

@@ -61,12 +61,12 @@
   </keybind>
   <keybind key="A-Print">
     <action name="Execute">
-      <execute>scrot -e 'mv $f ~/Pictures/Scrot'</execute>
+      <execute>scrot -e 'mv $f ~/Scrot'</execute>
     </action>
   </keybind>
   <keybind key="Print">
     <action name="Execute">
-      <execute>scrot -se 'mv $f ~/Pictures/Scrot'</execute>
+      <execute>scrot -se 'mv $f ~/Scrot'</execute>
     </action>
   </keybind>
   <keybind key="C-S-F5">

@@ -1,6 +1,6 @@
 <name>FlatBlack</name>
 <titleLayout>CIML</titleLayout>
-<keepBorder>yes</keepBorder>
+<keepBorder>no</keepBorder>
 <animateIconify>yes</animateIconify>
 <font place="ActiveWindow">
     <name>sans</name>

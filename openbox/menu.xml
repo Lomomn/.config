@@ -12,6 +12,12 @@
     </action>
   </item>
   <menu id="client-menu">
+    <item label="Invert">
+      <action name="Execute">
+        <execute>compton-invert</execute>
+      </action>
+    </item>
+  </menu>
 </menu>
 
 <menu id="root-menu" label="Openbox 3">

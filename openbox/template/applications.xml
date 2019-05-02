@@ -1,8 +1,9 @@
 <application class="*">
+    <maximized>false</maximized>
     <decor>no</decor>
 </application>
 
-<application class="spotify">
+<application name="Spotify" class="Spotify">
     <decor>no</decor>
     <desktop>all</desktop>
 </application>

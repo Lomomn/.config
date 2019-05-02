@@ -3,13 +3,14 @@ enable-ipc = true
 modules-left  = arch ewmh windows
 modules-right = cpu memory spotify date
 monitor = DisplayPort-0
+background = #cc000000
 
 tray-position = right
 tray-padding = 4
 tray-detached = false
 cursor-click = pointer
 
-font-0 = "Source Code Variable:pixelsize=10;3:weight=bold;2"
+font-0 = "Source Code Pro:pixelsize=10;3:weight=medium;2"
 font-1 = "HanaMinA:pixelsize=10;3"
 font-2 = "HanaMinB:pixelsize=10;3"
 font-3 = "Noto Color Emoji:scale=10;3"
@@ -18,7 +19,7 @@ font-3 = "Noto Color Emoji:scale=10;3"
 type = custom/text
 content = "[🔎] "
 content-padding = 0
-content-background = #000000
+content-background = #cc000000
 content-foreground = #ffffff
 click-left = sh ~/.config/polybar/rmenu_1
 click-right = sh ~/.config/polybar/rmenu_wi_1

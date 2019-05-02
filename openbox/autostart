@@ -1,5 +1,6 @@
 compton &
 spotify &
 #feh --randomize --bg-tile ~/.config/openbox/wallpapers/* &
-feh --bg-tile ~/.config/openbox/wallpapers/triangles.png &
+feh --bg-tile ~/.config/openbox/wallpapers/diagmonds.png &
+#feh --bg-fill ~/.config/openbox/wallpapers/ESqPsmR.png &
 polybar bar &

@@ -15,7 +15,7 @@ TODO
             Template/format the output (so that spaces can be used instead of module padding)
     
     Make the program loop and only print when something changes, this should minimize the delay
-        and not need polybar to poll every second which feels wrong        
+        and not need polybar to poll every second which feels wrong
 """
 
 name_length = 20
@@ -56,15 +56,19 @@ def get_name(win):
             name = name + ''*remaining
 
     return (
+        # Left click to toggle minimize, right click to minimize
         '%{A1:' + (is_active and 'wmctrl -i -r '+win.id+' -b toggle,hidden:}' or 'wmctrl -i -a '+win.id+':}') +
-        '%{A2:wmctrl -i -c '+win.id+':}' +
         '%{A3:wmctrl -i -r '+win.id+' -b add,hidden:}' +
         (is_active and active_color or background_color) +
-        "[ {} ]".format(name.decode("ascii", errors="ignore").encode()) +
+        "[ {} ".format(name.decode("ascii", errors="ignore").encode()) +
         '%{F-}' +
         '%{A}' + 
-        '%{A}' + 
-        '%{A}'
+        '%{A}' +
+        # Middle click the |x] part to close the window
+        (is_active and active_color or background_color) +
+        '%{A2:wmctrl -i -c '+win.id+':}' +
+        '|x]' +
+        '%{A}' 
     )
     
 

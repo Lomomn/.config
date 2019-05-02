@@ -1,0 +1,83 @@
+
+{
+    "keyboard.dispatch": "keyCode",
+    "editor.fontFamily": "'Iosevka Term Medium','Noto Color Emoji',  monospace",
+    "editor.fontLigatures": false,
+    "window.zoomLevel": -1,
+    "workbench.colorTheme": "8bit",
+    "workbench.activityBar.visible": false,
+    "workbench.statusBar.visible": true,
+    "window.menuBarVisibility": "toggle",
+    "files.exclude":{
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.pyc": true
+    },
+    "editor.matchBrackets": false,
+    "editor.renderLineHighlight": "all",
+    "editor.lineHeight": 0,
+    "git.ignoreMissingGitWarning": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "pixelbyte.love2d.path": "/usr/bin/love",
+    "extensions.ignoreRecommendations": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "explorer.autoReveal": true,
+    "newFile.defaultFileExtension": "",
+    "newFile.relativeTo": "file",
+    "workbench.statusBar.feedback.visible": false,
+    "explorer.sortOrder": "filesFirst",
+    "editor.tokenColorCustomizations": {
+        "[8bit]": {
+            "comments":"#7e7e7e"
+        }
+    },
+    "editor.cursorStyle": "block",
+    "workbench.colorCustomizations": {
+        "editor.selectionHighlightBorder": "#ff00ff85",
+        "editor.selectionBackground": "#ff00ff85",
+        "editor.lineHighlightBorder": "#9898ff",
+        "editor.lineHighlightBackground": "#00000000",
+        "editorIndentGuide.background": "#444",
+        "editorCursor.foreground": "#ff00ff98",
+        "editorCursor.background": "#000000",
+    },
+    "window.titleBarStyle": "native",
+    "emojisense.unicodeCompletionsEnabled": true,
+    "emojisense.showOnColon": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "emojisense.languages": {
+        "markdown": true,
+        "git-commit": true,
+        "plaintext": true,
+        "json": true,
+        "python": true,
+        "lua": true
+    },
+    "breadcrumbs.enabled": false,
+    "hexdump.sizeDisplay": 20971520,
+    "hexdump.sizeWarning": 20971520,
+    "hexdump.nibbles": 4,
+    "git.confirmSync": false,
+    "emmet.includeLanguages": {
+        "javascript": "html"
+    },
+    "bracket-pair-colorizer-2.colors": [
+        "#daa520", //goldenrod
+        "#1e90ff", //dodgerblue
+        "#da70d6"  //orchid
+    ],
+    "bracket-pair-colorizer-2.showBracketsInGutter": true,
+    "cSpell.userWords": [
+        "downlight",
+        "downlights",
+        "intumescent"
+    ],
+}

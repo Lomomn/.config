@@ -78,15 +78,16 @@
   </action>
 </keybind>
 <!-- Keybindings for window switching -->
-<keybind key="A-Tab">
+<keybind key="A-Tab W-Tab">
   <action name="NextWindow"/>
 </keybind>
-<keybind key="A-S-Tab">
+<keybind key="A-S-Tab W-S-Tab">
   <action name="PreviousWindow"/>
 </keybind>
 
 <!-- Keybindings for window snapping -->
 <keybind key="C-A-Left W-Left">
+  <action name="Unmaximize"/>
   <action name="Undecorate"/>
   <action name="MoveRelative">
     <x>-1/2</x>
@@ -106,6 +107,7 @@
 </keybind>
 
 <keybind key="C-A-Right W-Right">
+  <action name="Unmaximize"/>
   <action name="Undecorate"/>
   <action name="MoveRelative">
     <x>+1/2</x>
@@ -125,6 +127,7 @@
 </keybind>
   
 <keybind key="C-A-Up W-Up">
+  <action name="Unmaximize"/>
   <action name="Undecorate"/>
   <action name="MoveResizeTo">
     <x>0</x>
@@ -142,6 +145,7 @@
 
 <!-- Half the height of the window -->
 <keybind key="C-A-Down W-Down">
+  <action name="Unmaximize"/>
   <keybind key="C-A-Down W-Down">
     <action name="Undecorate"/>
     <action name="MoveResizeTo">
@@ -153,7 +157,6 @@
       <bottom>-20</bottom>
     </action>
   </keybind>
-
   <keybind key="C-A-Up W-Up">
     <action name="Undecorate"/>
     <action name="MoveResizeTo">

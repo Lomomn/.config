@@ -4,7 +4,6 @@
     <strength>10</strength>
     <screen_edge_strength>20</screen_edge_strength>
   </resistance>
-
   <focus>
     <focusNew>yes</focusNew>
     <followMouse>no</followMouse>
@@ -13,54 +12,54 @@
     <focusDelay>200</focusDelay>
     <raiseOnFocus>no</raiseOnFocus>
   </focus>
-
   <placement>
     <policy>Smart</policy>
     <center>yes</center>
     <monitor>Primary</monitor>
     <primaryMonitor>1</primaryMonitor>
   </placement>
-  
   <theme>
     <name>FlatBlack</name>
-<titleLayout>CIML</titleLayout>
-<keepBorder>no</keepBorder>
-<animateIconify>yes</animateIconify>
-<font place="ActiveWindow">
-    <name>sans</name>
-    <size>8</size>
-    <weight>bold</weight>
-    <slant>normal</slant>
-</font>
-<font place="InactiveWindow">
-    <name>sans</name>
-    <size>8</size>
-    <weight>bold</weight>
-    <slant>normal</slant>
-</font>
-<font place="MenuHeader">
-    <name>sans</name>
-    <size>9</size>
-    <weight>normal</weight>
-    <slant>normal</slant>
-</font>
-<font place="MenuItem">
-    <name>sans</name>
-    <size>9</size>
-    <weight>normal</weight>
-    <slant>normal</slant>
-</font>
-<font place="ActiveOnScreenDisplay">
-    <name/>
-</font>
-<font place="InactiveOnScreenDisplay">
-    <name>Sans</name>
-    <size>8</size>
-    <weight/>
-    <slant/>
-</font>
+    <titleLayout>CIML</titleLayout>
+    <keepBorder>no</keepBorder>
+    <animateIconify>yes</animateIconify>
+    <font place="ActiveWindow">
+      <name>sans</name>
+      <size>8</size>
+      <weight>bold</weight>
+      <slant>normal</slant>
+    </font>
+    <font place="InactiveWindow">
+      <name>sans</name>
+      <size>8</size>
+      <weight>bold</weight>
+      <slant>normal</slant>
+    </font>
+    <font place="MenuHeader">
+      <name>sans</name>
+      <size>9</size>
+      <weight>normal</weight>
+      <slant>normal</slant>
+    </font>
+    <font place="MenuItem">
+      <name>sans</name>
+      <size>9</size>
+      <weight>normal</weight>
+      <slant>normal</slant>
+    </font>
+    <font place="ActiveOnScreenDisplay">
+      <name/>
+      <size>8</size>
+      <weight/>
+      <slant/>
+    </font>
+    <font place="InactiveOnScreenDisplay">
+      <name>Sans</name>
+      <size>8</size>
+      <weight/>
+      <slant/>
+    </font>
   </theme>
-  
   <desktops>
     <number>4</number>
     <firstdesk>1</firstdesk>
@@ -72,7 +71,6 @@
     </names>
     <popupTime>0</popupTime>
   </desktops>
-  
   <resize>
     <drawContents>yes</drawContents>
     <popupShow>Nonpixel</popupShow>
@@ -82,14 +80,12 @@
       <y>0</y>
     </popupFixedPosition>
   </resize>
-
   <margins>
     <top>0</top>
     <bottom>0</bottom>
     <left>0</left>
     <right>0</right>
   </margins>
-  
   <dock>
     <position>TopLeft</position>
     <floatingX>0</floatingX>
@@ -102,245 +98,230 @@
     <showDelay>300</showDelay>
     <moveButton>Middle</moveButton>
   </dock>
-  
   <keyboard>
     <chainQuitKey>Escape</chainQuitKey>
-
-<!-- Keybindings for desktop switching -->
-<keybind key="W-1">
-  <action name="Desktop">
-    <desktop>1</desktop>
-  </action>
-</keybind>
-<keybind key="W-2">
-  <action name="Desktop">
-    <desktop>2</desktop>
-  </action>
-</keybind>
-<keybind key="W-3">
-  <action name="Desktop">
-    <desktop>3</desktop>
-  </action>
-</keybind>
-<keybind key="W-4">
-  <action name="Desktop">
-    <desktop>4</desktop>
-  </action>
-</keybind>
-
-<!-- Keybindings for yeeting windows to other desktops -->
-<keybind key="W-S-1">
-  <action name="SendToDesktop">
-    <to>1</to>
-  </action>
-</keybind>
-<keybind key="W-S-2">
-  <action name="SendToDesktop">
-    <to>2</to>
-  </action>
-</keybind>
-<keybind key="W-S-3">
-  <action name="SendToDesktop">
-    <to>3</to>
-  </action>
-</keybind>
-<keybind key="W-S-4">
-  <action name="SendToDesktop">
-    <to>4</to>
-  </action>
-</keybind>
-
-
-<!-- Keybindings for window actions -->
-<keybind key="A-F4 W-w">
-  <action name="Close"/>
-</keybind>
-<keybind key="A-Escape">
-  <action name="Lower"/>
-  <action name="FocusToBottom"/>
-  <action name="Unfocus"/>
-</keybind>
-<keybind key="A-space">
-  <action name="ShowMenu">
-    <menu>client-menu2</menu>
-  </action>
-</keybind>
-<keybind key="A-Print">
-  <action name="Execute">
-    <execute>scrot -e 'mv $f ~/Scrot'</execute>
-  </action>
-</keybind>
-<keybind key="Print">
-  <action name="Execute">
-    <execute>scrot -se 'mv $f ~/Scrot'</execute>
-  </action>
-</keybind>
-<keybind key="C-S-F5">
-  <action name="MoveResizeTo">
-    <x>center</x>
-    <y>40</y>
-    <width>1440</width>
-    <height>1125</height>
-  </action>
-</keybind>
-<!-- Keybindings for window switching -->
-<keybind key="A-Tab">
-  <action name="NextWindow"/>
-</keybind>
-<keybind key="A-S-Tab">
-  <action name="PreviousWindow"/>
-</keybind>
-
-<!-- Keybindings for window snapping -->
-<keybind key="C-A-Left W-Left">
-  <action name="Undecorate"/>
-  <action name="MoveRelative">
-    <x>-1/2</x>
-  </action>
-  <action name="MoveResizeTo">
-    <x>0</x>
-    <y>0</y>
-    <width>1/2</width>
-    <height>100%</height>
-  </action>
-  <action name="ResizeRelative">
-    <left>-20</left>
-    <right>-10</right>
-    <top>-20</top>
-    <bottom>-20</bottom>
-  </action>   
-</keybind>
-
-<keybind key="C-A-Right W-Right">
-  <action name="Undecorate"/>
-  <action name="MoveRelative">
-    <x>+1/2</x>
-  </action>
-  <action name="MoveResizeTo">
-    <x>1/2</x>
-    <y>0</y>
-    <width>1/2</width>
-    <height>100%</height>
-  </action>
-  <action name="ResizeRelative">
-    <left>-10</left>
-    <right>-20</right>
-    <top>-20</top>
-    <bottom>-20</bottom>
-  </action>    
-</keybind>
-  
-<keybind key="C-A-Up W-Up">
-  <action name="Undecorate"/>
-  <action name="MoveResizeTo">
-    <x>0</x>
-    <y>0</y>
-    <width>100%</width>
-    <height>100%</height>
-  </action>
-  <action name="ResizeRelative">
-    <left>-20</left>
-    <right>-20</right>
-    <top>-20</top>
-    <bottom>-20</bottom>
-  </action> 
-</keybind>
-
-<!-- Half the height of the window -->
-<keybind key="C-A-Down W-Down">
-  <keybind key="C-A-Down W-Down">
-    <action name="Undecorate"/>
-    <action name="MoveResizeTo">
-      <y>1/2</y>
-      <height>1/2</height>
-    </action>
-    <action name="ResizeRelative">
-      <top>-10</top>
-      <bottom>-20</bottom>
-    </action>
-  </keybind>
-
-  <keybind key="C-A-Up W-Up">
-    <action name="Undecorate"/>
-    <action name="MoveResizeTo">
-      <y>00</y>
-      <height>1/2</height>
-    </action>
-    <action name="ResizeRelative">
-      <top>-20</top>
-      <bottom>-10</bottom>
-    </action>  
-  </keybind>
-</keybind>
-
-<keybind key="C-A-d W-d">
-  <action name="If">
-    <query target="default">
-      <undecorated>yes</undecorated>
-    </query>
-    <then>
-      <action name="Decorate"/>  
-    </then>
-    <else>
-      <action name="Undecorate"/>  
-    </else>
-  </action>
-</keybind>
-
-<keybind key="C-A-o W-o">
-  <action name="ToggleOmnipresent"/>
-</keybind>
-  
-
-<!-- Keybindings for altering sound -->
-<keybind key="Pause">
-  <action name="Execute">
-    <command>dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause</command>
-  </action>
-</keybind>
-<keybind key="XF86AudioPlay">
-  <action name="Execute">
-    <command>dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause</command>
-  </action>
-</keybind>
-<keybind key="Scroll_Lock">
-  <action name="Execute">
-    <command>dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next</command>
-  </action>
-</keybind>
-<keybind key="XF86AudioNext">
-  <action name="Execute">
-    <command>dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next</command>
-  </action>
-</keybind>
-
-
-<!-- Keybindings for running applications -->
-<keybind key="C-A-t W-t">
-  <action name="Execute">
-    <command>terminator</command>
-  </action>
-</keybind>
-<keybind key="A-F1 W-space">
-  <action name="Execute">
-    <command>rofi -modi run,drun -show drun -location 0 -yoffset 60 -xoffset 28 -line-padding 4 -columns 1 -width 25 
+    <!-- Keybindings for desktop switching -->
+    <keybind key="W-1">
+      <action name="Desktop">
+        <desktop>1</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-2">
+      <action name="Desktop">
+        <desktop>2</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-3">
+      <action name="Desktop">
+        <desktop>3</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-4">
+      <action name="Desktop">
+        <desktop>4</desktop>
+      </action>
+    </keybind>
+    <!-- Keybindings for yeeting windows to other desktops -->
+    <keybind key="W-S-1">
+      <action name="SendToDesktop">
+        <to>1</to>
+      </action>
+    </keybind>
+    <keybind key="W-S-2">
+      <action name="SendToDesktop">
+        <to>2</to>
+      </action>
+    </keybind>
+    <keybind key="W-S-3">
+      <action name="SendToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
+    <keybind key="W-S-4">
+      <action name="SendToDesktop">
+        <to>4</to>
+      </action>
+    </keybind>
+    <!-- Keybindings for window actions -->
+    <keybind key="A-F4 W-w">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="A-Escape">
+      <action name="Lower"/>
+      <action name="FocusToBottom"/>
+      <action name="Unfocus"/>
+    </keybind>
+    <keybind key="A-space">
+      <action name="ShowMenu">
+        <menu>client-menu2</menu>
+      </action>
+    </keybind>
+    <keybind key="A-Print">
+      <action name="Execute">
+        <execute>scrot -e 'mv $f ~/Scrot'</execute>
+      </action>
+    </keybind>
+    <keybind key="Print">
+      <action name="Execute">
+        <execute>scrot -se 'mv $f ~/Scrot'</execute>
+      </action>
+    </keybind>
+    <keybind key="C-S-F5">
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>40</y>
+        <width>1440</width>
+        <height>1125</height>
+      </action>
+    </keybind>
+    <!-- Keybindings for window switching -->
+    <keybind key="A-Tab W-Tab">
+      <action name="NextWindow"/>
+    </keybind>
+    <keybind key="A-S-Tab W-S-Tab">
+      <action name="PreviousWindow"/>
+    </keybind>
+    <!-- Keybindings for window snapping -->
+    <keybind key="C-A-Left W-Left">
+      <action name="Unmaximize"/>
+      <action name="Undecorate"/>
+      <action name="MoveRelative">
+        <x>-1/2</x>
+      </action>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>1/2</width>
+        <height>100%</height>
+      </action>
+      <action name="ResizeRelative">
+        <left>-20</left>
+        <right>-10</right>
+        <top>-20</top>
+        <bottom>-20</bottom>
+      </action>
+    </keybind>
+    <keybind key="C-A-Right W-Right">
+      <action name="Unmaximize"/>
+      <action name="Undecorate"/>
+      <action name="MoveRelative">
+        <x>+1/2</x>
+      </action>
+      <action name="MoveResizeTo">
+        <x>1/2</x>
+        <y>0</y>
+        <width>1/2</width>
+        <height>100%</height>
+      </action>
+      <action name="ResizeRelative">
+        <left>-10</left>
+        <right>-20</right>
+        <top>-20</top>
+        <bottom>-20</bottom>
+      </action>
+    </keybind>
+    <keybind key="C-A-Up W-Up">
+      <action name="Unmaximize"/>
+      <action name="Undecorate"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>100%</width>
+        <height>100%</height>
+      </action>
+      <action name="ResizeRelative">
+        <left>-20</left>
+        <right>-20</right>
+        <top>-20</top>
+        <bottom>-20</bottom>
+      </action>
+    </keybind>
+    <!-- Half the height of the window -->
+    <keybind key="C-A-Down W-Down">
+      <action name="Unmaximize"/>
+      <keybind key="C-A-Down W-Down">
+        <action name="Undecorate"/>
+        <action name="MoveResizeTo">
+          <y>1/2</y>
+          <height>1/2</height>
+        </action>
+        <action name="ResizeRelative">
+          <top>-10</top>
+          <bottom>-20</bottom>
+        </action>
+      </keybind>
+      <keybind key="C-A-Up W-Up">
+        <action name="Undecorate"/>
+        <action name="MoveResizeTo">
+          <y>00</y>
+          <height>1/2</height>
+        </action>
+        <action name="ResizeRelative">
+          <top>-20</top>
+          <bottom>-10</bottom>
+        </action>
+      </keybind>
+    </keybind>
+    <keybind key="C-A-d W-d">
+      <action name="If">
+        <query target="default">
+          <undecorated>yes</undecorated>
+        </query>
+        <then>
+          <action name="Decorate"/>
+        </then>
+        <else>
+          <action name="Undecorate"/>
+        </else>
+      </action>
+    </keybind>
+    <keybind key="C-A-o W-o">
+      <action name="ToggleOmnipresent"/>
+    </keybind>
+    <!-- Keybindings for altering sound -->
+    <keybind key="Pause">
+      <action name="Execute">
+        <command>dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioPlay">
+      <action name="Execute">
+        <command>dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause</command>
+      </action>
+    </keybind>
+    <keybind key="Scroll_Lock">
+      <action name="Execute">
+        <command>dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioNext">
+      <action name="Execute">
+        <command>dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next</command>
+      </action>
+    </keybind>
+    <!-- Keybindings for running applications -->
+    <keybind key="C-A-t W-t">
+      <action name="Execute">
+        <command>terminator</command>
+      </action>
+    </keybind>
+    <keybind key="A-F1 W-space">
+      <action name="Execute">
+        <command>rofi -modi run,drun -show drun -location 0 -yoffset 60 -xoffset 28 -line-padding 4 -columns 1 -width 25 
 -lines 10 -padding 25 -hide-scrollbar -show-icons</command>
-  </action>
-</keybind>
-
-<keybind key="A-Prior">
-  <action name="Execute">
-    <command>notflux 1</command>
-  </action>
-</keybind>
-<keybind key="A-Next">
-  <action name="Execute">
-    <command>notflux 0</command>
-  </action>
-</keybind>
-
+      </action>
+    </keybind>
+    <keybind key="A-Prior">
+      <action name="Execute">
+        <command>notflux 1</command>
+      </action>
+    </keybind>
+    <keybind key="A-Next">
+      <action name="Execute">
+        <command>notflux 0</command>
+      </action>
+    </keybind>
   </keyboard>
-
   <mouse>
     <dragThreshold>8</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->
@@ -626,7 +607,6 @@
       </mousebind>
     </context>
   </mouse>
-  
   <menu>
     <file>menu.xml</file>
     <hideDelay>200</hideDelay>
@@ -634,22 +614,10 @@
     <submenuShowDelay>100</submenuShowDelay>
     <applicationIcons>yes</applicationIcons>
   </menu>
-
   <applications>
     <application class="*">
-    <maximized>false</maximized>
-    <decor>no</decor>
-</application>
-
-<application name="Spotify" class="Spotify">
-    <decor>no</decor>
-    <desktop>all</desktop>
-</application>
-
-<application name="discord">
-    <decor>yes</decor>
-</application>
-
+      <maximized>false</maximized>
+      <decor>no</decor>
+    </application>
   </applications>
-
 </openbox_config>

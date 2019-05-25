@@ -2,12 +2,3 @@
     <maximized>false</maximized>
     <decor>no</decor>
 </application>
-
-<application name="Spotify" class="Spotify">
-    <decor>no</decor>
-    <desktop>all</desktop>
-</application>
-
-<application name="discord">
-    <decor>yes</decor>
-</application>

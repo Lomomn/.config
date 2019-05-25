@@ -22,6 +22,7 @@ name_length = 20
 name_center = True
 active_color = '%{F#ffffff}'
 background_color = '%{F#666666}'
+bar_name = 'bar'
 
 def get_current_desktop():
     out = subprocess.check_output('wmctrl -d', shell=True)
@@ -31,17 +32,18 @@ def get_current_desktop():
             return int(spl[0].strip())
 
 
-
-
 def get_name(win):
-    if win.desktop==-1 or win.desktop!=current_desktop:
+    if not(win.desktop==-1) and win.desktop!=current_desktop:
         return None
 
         
     active_win = Window.get_active()
-    name = win.wm_name
-    is_active = active_win and active_win.id == win.id
+    name = win.wm_name 
+    exclude_name = 'polybar-{}'.format(bar_name)
+    if name[:len(exclude_name)] == exclude_name:
+        return None
 
+    is_active = active_win and active_win.id == win.id
     # Subtract 3 for ellipsis 
     if len(name) > name_length-3:
         name = name[:name_length-3] + '...'
@@ -58,17 +60,16 @@ def get_name(win):
     return (
         # Left click to toggle minimize, right click to minimize
         '%{A1:' + (is_active and 'wmctrl -i -r '+win.id+' -b toggle,hidden:}' or 'wmctrl -i -a '+win.id+':}') +
-        '%{A3:wmctrl -i -r '+win.id+' -b add,hidden:}' +
         (is_active and active_color or background_color) +
+        '%{A3:wmctrl -i -r '+win.id+' -b add,hidden:}' +
         "[ {} ".format(name.decode("ascii", errors="ignore").encode()) +
-        '%{F-}' +
         '%{A}' + 
         '%{A}' +
         # Middle click the |x] part to close the window
-        (is_active and active_color or background_color) +
         '%{A2:wmctrl -i -c '+win.id+':}' +
         '|x]' +
-        '%{A}' 
+        '%{A}' +
+        '%{F-}'
     )
     
 

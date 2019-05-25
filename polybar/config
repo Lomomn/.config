@@ -32,7 +32,7 @@ label-padding = 0
 [module/windows]
 type = custom/script
 label-padding = 0
-interval = 1
+interval = 0.5
 format = <label>
 exec = python2.7 ~/.config/polybar/windows.py
 

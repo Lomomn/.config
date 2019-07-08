@@ -1,0 +1,1 @@
+`cd ~/.config/openbox/template` and run `python generate.py`
